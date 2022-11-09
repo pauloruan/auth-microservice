@@ -13,6 +13,8 @@
     "project": "./tsconfig.json"
   },
   "rules": {
-    "prettier/prettier": 2
+    "prettier/prettier": 2,
+    "@typescript-eslint/restrict-template-expressions": 0,
+    "@typescript-eslint/strict-boolean-expressions": 0
   }
 }
