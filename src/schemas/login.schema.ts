@@ -1,6 +1,6 @@
 import { z } from 'zod';
-import regex from '../helpers/regex.helper';
 import messages from '../helpers/messages.helper';
+import regex from '../helpers/regex.helper';
 
 const loginSchema = z.object({
   email: z.string().email(messages.LOGIN_FAILED),

@@ -1,8 +1,8 @@
+import RegisterUser from '../@types/RegisterUser';
 import { hashPassword } from '../helpers/hash.helper';
 import { generateToken } from '../helpers/jwt.helper';
 import redis from '../lib/cache';
 import User from '../models/User';
-import RegisterUser from '../@types/RegisterUser';
 
 export default async function registerService({
   name,

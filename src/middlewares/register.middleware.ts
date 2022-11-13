@@ -1,4 +1,4 @@
-import { Request, Response, NextFunction } from 'express';
+import { NextFunction, Request, Response } from 'express';
 import registerSchema from '../schemas/register.schema';
 
 export default function registerMiddleware(

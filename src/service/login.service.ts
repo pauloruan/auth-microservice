@@ -1,7 +1,7 @@
+import LoginUser from '../@types/LoginUser';
 import { comparePassword } from '../helpers/hash.helper';
 import { generateToken } from '../helpers/jwt.helper';
 import User from '../models/User';
-import LoginUser from '../@types/LoginUser';
 
 export default async function loginService({
   email,
@@ -16,8 +16,8 @@ export default async function loginService({
     if (!isPasswordValid) {
       throw new Error('Invalid credentials');
     }
-    const token = generateToken(user.email, user._id);
-    return { token };
+    const accessToken = generateToken(user.email, user._id);
+    return { accessToken };
   } catch (error) {
     throw new Error((error as Error).message);
   }

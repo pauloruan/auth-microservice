@@ -1,6 +1,6 @@
 import { Router } from 'express';
+import registerController from '../controllers/register.controller';
 import registerMiddleware from '../middlewares/register.middleware';
-import registerController from '../modules/register/register.controller';
 
 const registerRoutes = Router();
 

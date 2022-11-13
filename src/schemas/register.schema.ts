@@ -1,6 +1,6 @@
 import { z } from 'zod';
-import regex from '../helpers/regex.helper';
 import messages from '../helpers/messages.helper';
+import regex from '../helpers/regex.helper';
 
 const registerSchema = z.object({
   name: z
