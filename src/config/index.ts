@@ -1,7 +1,9 @@
-import express, { Express } from 'express';
 import cors from 'cors';
-import router from '../routes';
+import express, { Express } from 'express';
+import swaggerUi from 'swagger-ui-express';
 import databaseConfig from '../database';
+import router from '../routes';
+import swaggerDocs from '../swagger.json';
 
 export default function appConfig(app: Express): void {
   databaseConfig();
@@ -9,4 +11,5 @@ export default function appConfig(app: Express): void {
   app.use(cors());
   app.use(express.json());
   app.use(router);
+  app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocs));
 }
