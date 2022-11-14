@@ -11,7 +11,7 @@
   },
   "servers": [
     {
-      "url": "http://localhost:3333/",
+      "url": "https://auth-microservice.up.railway.app/",
       "description": "Servidor de Produção"
     }
   ],
