@@ -13,6 +13,10 @@
     {
       "url": "https://auth-microservice.up.railway.app/",
       "description": "Servidor de Produção"
+    },
+    {
+      "url": "http://localhost:3333",
+      "description": "Servidor de Desenvolvimento"
     }
   ],
   "paths": {
